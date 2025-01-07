@@ -1,0 +1,16 @@
+{
+    "profil" : [
+        { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
+        { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
+    ],
+    "prieres" : [
+        { "href" : "chapelet", "title" : "Chapelet du rosaire" },
+        { "href" : "ch-ames", "title" : "Chapelet des 13 vertus de Notre-Dame" },
+        { "href" : "ch-misericorde", "title" : "Chapelet de la Divine Miséricorde" },
+        { "href" : "dizaines", "title" : "Dizaines simples" },
+        { "href" : "litanies", "title" : "Litanies de Lorette" }
+    ],
+    "exercices" : [
+        { "href" : "ex-base", "title" : "Cohérence cardiaque" }
+    ]
+}

@@ -1,0 +1,23 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Dizaines simples" %}
+
+{% block content %}
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include rpath + "rs-dizaine.jinja" %}
+
+{{ mc.return_link() }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Scripts -->
+
+{% include rpath + "rs-scripts.jinja" %}
+
+{% endblock %}
