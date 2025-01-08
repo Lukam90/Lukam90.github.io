@@ -1,12 +1,9 @@
 // Eléments
 
-const selNiveaux = $("#sel_niveaux");
+const selRondes = $("#sel_rondes");
 
-const divMedaille = $("#nv_medaille");
-const divRonde = $("#nv_ronde");
-
-const basePremier = $("#base_trio_1");
-const trioPremier = $("#nv_trio_1");
+const basePremier = $("#ste_marie_vertus_1");
+const btnPremier = $("#dz_grains_1");
 
 // Variables
 
@@ -14,29 +11,12 @@ let index = 0;
 
 /* Fonctions */
 
-resetAll();
-
-// MAJ du bloc
-
-function setBlock()
-{
-    index = selNiveaux.selectedIndex;
-
-    if (index == 0) {
-        switchBlocks(divMedaille, divRonde);
-    } else {
-        switchBlocks(divRonde, divMedaille);
-    }
-
-    basePremier.checked = true;
-    trioPremier.checked = true;
-}
-
 // Réinitialisation du chapelet
 
 function resetAll()
 {
-    selNiveaux.selectedIndex = 0;
+    selRondes.selectedIndex = 0;
 
-    setBlock();
+    basePremier.checked = true;
+    btnPremier.checked = true;
 }

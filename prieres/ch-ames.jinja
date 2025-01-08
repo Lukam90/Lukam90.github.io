@@ -1,15 +1,15 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/special/" %}
 
-{% set title = "Chapelet des 13 vertus de Notre-Dame" %}
-
-{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
-{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+{% set title = "Chapelet du salut des âmes" %}
 
 {% block content %}
-<p>Le chapelet est décrit et disponible sur le site de {{ mc.link(ext_url, "La Bonne Nouvelle") }}.</p>
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
+
+<hr />
 
 <p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
 
@@ -19,39 +19,35 @@
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "credo.jinja" %}
+{% include rpath + "rs-base.jinja" %}
 
-{{ mc.anchor("pater") }}
+<!-- Rondes -->
 
-{% include bpath + "notre-pere.jinja" %}
+{{ mc.anchor("rondes", "=") }}
 
-{{ mc.anchor("gloria") }}
+<p>
+    <select id="sel_rondes" onchange="checkFirst();">
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
 
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.grains("ames", "base_trio") }}
-
-<!-- Niveaux -->
-
-{{ mc.anchor("niveaux", "=") }}
-
-{% include spath + "ex-niveaux.jinja" %}
-
-{% include bpath + "ste-marie.jinja" %}
+<p>
+Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
+</p>
 
 <hr />
 
-<div id="nv_medaille">
-{% include spath + "ex-medaille.jinja" %}
-</div>
+<p>
+Sacré-Cœur de Jésus, aie pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
+</p>
 
-<div id="nv_ronde">
-{% include spath + "ex-repos.jinja" %}
+{{ mc.grains("dizaine", "dz_grains") }}
 
-{{ mc.grains("trio", "nv_trio") }}
-</div>
-
-{{ mc.return_link("niveaux") }}
+{{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 

@@ -5,7 +5,7 @@
     ],
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
-        { "href" : "ch-ames", "title" : "Chapelet des 13 vertus de Notre-Dame" },
+        { "href" : "ch-ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "ch-passion", "title" : "Chapelet des saintes plaies" },
         { "href" : "dizaines", "title" : "Dizaines simples" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }

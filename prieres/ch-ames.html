@@ -9,19 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chapelet des 13 vertus de Notre-Dame</title>
+    <title>Chapelet du salut des âmes</title>
 
     <link rel="stylesheet" href="/public/css/prieres.css" />
 </head>
 
 <body>
     <main>
-        <h1>Chapelet des 13 vertus de Notre-Dame</h1>
+        <h1>Chapelet du salut des âmes</h1>
 
         
-<p>Le chapelet est décrit et disponible sur le site de 
-<a href="https://boutique.labonnenouvelle.net/chapelets-et-rosaire/1073-chapelet-des-ames-du-purgatoire-9502379583487.html" class="bleu" target="_blank">La Bonne Nouvelle</a>
-.</p>
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
+
+<hr />
 
 <p>
 <input type="checkbox" id="v_latine" onchange="switchLang()" />
@@ -93,8 +93,8 @@ Amen.
 </p>
 
 
-<div id="pater">
-    <a href="#pater">
+<div id="b_pater">
+    <a href="#b_pater">
     
     ***
     
@@ -129,97 +129,14 @@ Amen.
 </p>
 
 
-<div id="gloria">
-    <a href="#gloria">
+<div id="b_ave">
+    <a href="#b_ave">
     
     ***
     
     </a>
 </div>
 
-
-<p class="fr">
-Gloire au Père, et au Fils, et au Saint-Esprit,<br>
-comme il était au commencement,<br>
-maintenant et toujours,<br>
-pour les siècles des siècles.<br>
-Amen.
-</p>
-
-<p class="latin">
-Gloria Patri, et Filio, et Spiritui Sancto,<br>
-sicut erat in principio,<br>
-et nunc et semper,<br>
-et in saecula saeculorum.<br>
-Amen.
-</p>
-
-
-    
-
-    <p class="grains" id="base_trio">
-    
-        
-
-        
-<input type="radio" name="base_trio" id="base_trio_1" value="-"  />
-<label for="base_trio_1">-</label>
-
-    
-        
-
-        
-<input type="radio" name="base_trio" id="base_trio_2" value="Saints"  />
-<label for="base_trio_2">Saints</label>
-
-    
-        
-
-        
-<input type="radio" name="base_trio" id="base_trio_3" value="St Michel"  />
-<label for="base_trio_3">St Michel</label>
-
-    
-        
-
-        
-<input type="radio" name="base_trio" id="base_trio_4" value="Anges gardiens"  />
-<label for="base_trio_4">Anges gardiens</label>
-
-    
-    </p>
-
-
-<!-- Niveaux -->
-
-
-<div id="niveaux">
-    <a href="#niveaux">
-    
-    ===
-    
-    </a>
-</div>
-
-
-<p>
-    <select id="sel_niveaux" onchange="setBlock();">
-        <option>Médaille</option>
-        <option>1. Crainte de Dieu</option>
-        <option>2. Charité</option>
-        <option>3. Foi</option>
-        <option>4. Espérance</option>
-        <option>5. Obéissance</option>
-        <option>6. Patience</option>
-        <option>7. Piété</option>
-        <option>8. Chasteté</option>
-        <option>9. Prudence</option>
-        <option>10. Force</option>
-        <option>11. Tempérance</option>
-        <option>12. Pureté</option>
-        <option>13. Justice</option>
-    </select>
-</p>
 
 <p class="fr">
 Je vous salue Marie, pleine de grâce,<br>
@@ -243,63 +160,195 @@ nunc, et in ora mortis nostræ.<br>
 Amen.
 </p>
 
-<hr />
-
-<div id="nv_medaille">
-<p>
-Mère de la Miséricorde Divine,<br>
-intercédez pour les Saintes âmes détenues au Purgatoire,<br>
-par la puissance de Votre Cœur Immaculé,<br>
-pour glorifier Dieu en vue du Salut de toutes les âmes. 
-</p>
-</div>
-
-<div id="nv_ronde">
-<p>
-Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
-Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu.<br>
-Amen.
-</p>
-
 
     
 
-    <p class="grains" id="nv_trio">
+    <p class="grains" id="ste_marie_vertus">
     
         
 
         
-<input type="radio" name="nv_trio" id="nv_trio_1" value="0"  />
-<label for="nv_trio_1">0</label>
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_1" value="-"  />
+<label for="ste_marie_vertus_1">-</label>
 
     
         
 
         
-<input type="radio" name="nv_trio" id="nv_trio_2" value="1"  />
-<label for="nv_trio_2">1</label>
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_2" value="foi"  />
+<label for="ste_marie_vertus_2">foi</label>
 
     
         
 
         
-<input type="radio" name="nv_trio" id="nv_trio_3" value="2"  />
-<label for="nv_trio_3">2</label>
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_3" value="espérance"  />
+<label for="ste_marie_vertus_3">espérance</label>
 
     
         
 
         
-<input type="radio" name="nv_trio" id="nv_trio_4" value="3"  />
-<label for="nv_trio_4">3</label>
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_4" value="charité"  />
+<label for="ste_marie_vertus_4">charité</label>
 
     
     </p>
 
+
+
+<div id="b_gloria">
+    <a href="#b_gloria">
+    
+    ***
+    
+    </a>
 </div>
 
 
-<p><a href="#niveaux" class="bleu" >Retour en haut</a></p>
+<p class="fr">
+Gloire au Père, et au Fils, et au Saint-Esprit,<br>
+comme il était au commencement,<br>
+maintenant et toujours,<br>
+pour les siècles des siècles.<br>
+Amen.
+</p>
+
+<p class="latin">
+Gloria Patri, et Filio, et Spiritui Sancto,<br>
+sicut erat in principio,<br>
+et nunc et semper,<br>
+et in saecula saeculorum.<br>
+Amen.
+</p>
+
+<!-- Rondes -->
+
+
+<div id="rondes">
+    <a href="#rondes">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p>
+    <select id="sel_rondes" onchange="checkFirst();">
+        
+        <option>Ronde n°1</option>
+        
+        <option>Ronde n°2</option>
+        
+        <option>Ronde n°3</option>
+        
+        <option>Ronde n°4</option>
+        
+        <option>Ronde n°5</option>
+        
+    </select>
+</p>
+
+<p>
+Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
+</p>
+
+<hr />
+
+<p>
+Sacré-Cœur de Jésus, aie pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
+</p>
+
+
+    
+
+    <p class="grains" id="dz_grains">
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_1" value="0"  />
+<label for="dz_grains_1">0</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_2" value="1"  />
+<label for="dz_grains_2">1</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_3" value="2"  />
+<label for="dz_grains_3">2</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_4" value="3"  />
+<label for="dz_grains_4">3</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_5" value="4"  />
+<label for="dz_grains_5">4</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_6" value="5"  />
+<label for="dz_grains_6">5</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_7" value="6"  />
+<label for="dz_grains_7">6</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_8" value="7"  />
+<label for="dz_grains_8">7</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_9" value="8"  />
+<label for="dz_grains_9">8</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_10" value="9"  />
+<label for="dz_grains_10">9</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_11" value="10"  />
+<label for="dz_grains_11">10</label>
+
+    
+    </p>
+
+
+
+<p><a href="#rondes" class="bleu" >Retour en haut</a></p>
 
 
 <!-- Fin -->
