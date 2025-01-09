@@ -25,11 +25,9 @@
 
 {% include spath + "sg-base.jinja" %}
 
-<!-- Mystères -->
+<!-- Dizaines -->
 
 {{ mc.anchor("mysteres", "=") }}
-
-{% include spath + "sg-mysteres.jinja" %}
 
 {% include spath + "sg-dizaine.jinja" %}
 
@@ -55,9 +53,6 @@
 
 <!-- Scripts -->
 
-{{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
-
-{{ mc.script("chapelets/ch-sang.js") }}
+{% include spath + "sg-scripts.jinja" %}
 
 {% endblock %}

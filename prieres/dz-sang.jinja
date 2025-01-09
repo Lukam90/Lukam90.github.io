@@ -1,0 +1,23 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Dizaines du précieux sang de Jésus" %}
+
+{% block content %}
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("mysteres", "=") }}
+
+{% include spath + "sg-dizaine.jinja" %}
+
+{{ mc.return_link("mysteres") }}
+
+<!-- Scripts -->
+
+{% include spath + "sg-scripts.jinja" %}
+
+{% endblock %}
