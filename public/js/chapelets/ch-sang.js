@@ -1,12 +1,13 @@
 // Eléments
 
-const selRondes = $("#sel_rondes");
+const selMysteres = $("#sel_mysteres");
 
-const divDizaines = $("#dizaines");
-const divFin = $("#fin");
+const trioPremier = $("#ste_marie_vertus_1");
+const dzPremier = $("#dz_grains_1");
 
-const btnPremier = $("#dz_grains_1");
-const finPremier = $("#fin_trio_1");
+const intros = $all(".intro");
+
+let intro;
 
 // Variables
 
@@ -16,20 +17,19 @@ let index = 0;
 
 resetAll();
 
-// MAJ du bloc
+// MAJ de l'intro
 
-function setBlock()
+function setIntro()
 {
-    index = selRondes.selectedIndex;
+    index = selMysteres.selectedIndex;
 
-    if (index < 5) {
-        switchBlocks(divDizaines, divFin);
-    } else {
-        switchBlocks(divFin, divDizaines);
-    }
+    intro = intros[index];
 
-    btnPremier.checked = true;
-    finPremier.checked = true;
+    hideAll(intros);
+    showBlock(intro);
+
+    trioPremier.checked = true;
+    dzPremier.checked = true;
 }
 
 // Réinitialisation du chapelet
