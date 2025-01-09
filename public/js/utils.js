@@ -70,3 +70,9 @@ function checkFirst()
 {
     btnPremier.checked = true;
 }
+
+/* Ancres */
+
+function goTo(anchor) {
+    window.location.href = anchor;
+}
