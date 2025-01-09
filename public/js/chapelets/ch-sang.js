@@ -36,7 +36,7 @@ function setIntro()
 
 function resetAll()
 {
-    selRondes.selectedIndex = 0;
+    selMysteres.selectedIndex = 0;
 
-    setBlock();
+    setIntro();
 }
