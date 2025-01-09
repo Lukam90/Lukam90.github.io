@@ -5,6 +5,7 @@ const selMysteres = $("#sel_mysteres");
 const divPater = $("#dz_pater");
 
 const btnPremier = $("#dz_grains_1");
+const btnDernier = $("#dz_grains_7");
 
 const intros = $all(".intro");
 
@@ -13,8 +14,6 @@ let intro;
 // Variables
 
 let index = 0;
-
-
 
 /* Fonctions */
 
@@ -46,15 +45,24 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    if (e.key == "m") {
-        goTo("#mysteres");
+    // Langue (Latin - FR)
+    if (e.key == "l") cbLatin.click();
 
-        selMysteres.focus();
-    }
+    // Sélection du mystère (ou retour)
+    if (e.key == "m" || e.key == "1") selMysteres.focus();
 
-    if (e.key == "d") btnPremier.focus();
+    // Pater
+    if (e.key == "p" || e.key == "2") goTo("#dz_pater");
 
-    if (e.key == "p") goTo("#dz_pater");
-    if (e.key == "a") goTo("#dz_ave");
-    if (e.key == "f") goTo("#dz_fin");
+    // Ave
+    if (e.key == "a" || e.key == "3") goTo("#dz_ave");
+
+    // Douzaine
+    if (e.key == "d" || e.key == "4") checkButton(btnPremier);
+
+    // Gloria
+    if (e.key == "g" || e.key == "5") checkButton(btnDernier);
+
+    // Oraison finale
+    if (e.key == "f" || e.key == "6") goTo("#dz_fin");
 });
