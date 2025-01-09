@@ -2,8 +2,7 @@
 
 const selMysteres = $("#sel_mysteres");
 
-const trioPremier = $("#ste_marie_vertus_1");
-const dzPremier = $("#dz_grains_1");
+const btnPremier = $("#dz_grains_1");
 
 const intros = $all(".intro");
 
@@ -28,8 +27,7 @@ function setIntro()
     hideAll(intros);
     showBlock(intro);
 
-    trioPremier.checked = true;
-    dzPremier.checked = true;
+    checkFirst();
 }
 
 // Réinitialisation du chapelet
