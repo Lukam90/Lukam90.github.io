@@ -41,3 +41,9 @@ function resetAll()
 
     setIntro();
 }
+
+/* Raccourcis */
+
+document.addEventListener("keydown", e => {
+    if (e.key == "m")   selMysteres.focus();
+});
