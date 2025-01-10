@@ -41,28 +41,3 @@ function resetAll()
 
     setIntro();
 }
-
-/* Raccourcis */
-
-document.addEventListener("keydown", e => {
-    // Langue (Latin - FR)
-    if (e.key == "l") cbLatin.click();
-
-    // Sélection du mystère (ou retour)
-    if (e.key == "m" || e.key == "1") selMysteres.focus();
-
-    // Pater
-    if (e.key == "p" || e.key == "2") goTo("#dz_pater");
-
-    // Ave
-    if (e.key == "a" || e.key == "3") goTo("#dz_ave");
-
-    // Douzaine
-    if (e.key == "d" || e.key == "4") checkButton(btnPremier);
-
-    // Gloria
-    if (e.key == "g" || e.key == "5") checkButton(btnDernier);
-
-    // Oraison finale
-    if (e.key == "f" || e.key == "6") goTo("#dz_fin");
-});

@@ -6,13 +6,26 @@
 {% set title = "Dizaines du précieux sang de Jésus" %}
 
 {% block content %}
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
 
 {% include bpath + "signe-croix.jinja" %}
 
+<!-- Rondes -->
+
+{% include spath + "sg-mysteres.jinja" %}
+
+{% include spath + "sg-intros.jinja" %}
+
 <hr />
 
-{% include spath + "sg-dizaine.jinja" %}
+<p>Précieux Sang de Jésus-Christ, sauvez-nous et le monde entier.</p>
+
+{{ mc.grains("douzaine", "dz_grains") }}
+
+<hr />
+
+{% include spath + "sg-tabernacle.jinja" %}
+
+{% include spath + "sg-refrain.jinja" %}
 
 {{ mc.return_link("sel_mysteres") }}
 
