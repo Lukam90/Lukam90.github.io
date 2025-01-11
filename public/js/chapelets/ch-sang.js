@@ -14,6 +14,7 @@ let intro;
 // Variables
 
 let index = 0;
+let numKey = 0;
 
 /* Fonctions */
 
@@ -45,5 +46,13 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    if (e.key == "m")   selMysteres.focus();
+    numKey = parseInt(e.key);
+
+    if (e.key == "m")   goTo("#mysteres");
+    if (e.key == "l")   cbLatin.click();
+
+    if (numKey >= 1 && numKey <= 5) {
+        selMysteres.focus();
+        selMysteres.selectedIndex = numKey - 1;
+    }
 });
