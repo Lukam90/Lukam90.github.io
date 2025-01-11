@@ -69,3 +69,11 @@ function majInfos()
 
     checkFirst();
 }
+
+/* Raccourcis */
+
+document.addEventListener("keydown", e => {
+    if (e.key == "l")   cbLatin.click();
+
+    if (e.key == "m")   goTo("#mysteres");
+});

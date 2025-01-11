@@ -6,7 +6,6 @@
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "ch-sang", "title" : "Chapelet du Précieux Sang de Jésus" },
-        { "href" : "dizaines", "title" : "Dizaines simples" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
     "exercices" : [
