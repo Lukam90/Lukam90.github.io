@@ -2,10 +2,7 @@
 
 const selMysteres = $("#sel_mysteres");
 
-const divPater = $("#dz_pater");
-
 const btnPremier = $("#dz_grains_1");
-const btnDernier = $("#dz_grains_7");
 
 const intros = $all(".intro");
 
@@ -48,11 +45,24 @@ function resetAll()
 document.addEventListener("keydown", e => {
     numKey = parseInt(e.key);
 
-    if (e.key == "m")   goTo("#mysteres");
     if (e.key == "l")   cbLatin.click();
+
+    if (e.key == "m")   goTo("#mysteres");
+    if (e.key == "p")   goTo("#dz_pater");
+    if (e.key == "a")   goTo("#dz_ave");
+    if (e.key == "g")   goTo("#dz_gloria");
+    if (e.key == "f")   goTo("#dz_fin");
+
+    if (e.key == "d") {
+        goTo("#dz_serie");
+        
+        btnPremier.focus();
+    }
 
     if (numKey >= 1 && numKey <= 5) {
         selMysteres.focus();
         selMysteres.selectedIndex = numKey - 1;
+
+        setIntro();
     }
 });
