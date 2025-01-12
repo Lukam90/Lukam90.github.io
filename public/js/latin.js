@@ -19,3 +19,9 @@ function switchLang()
         hideAll(latinBlocks);
     }
 }
+
+/* Raccourcis */
+
+document.addEventListener("keydown", e => {
+    if (e.key == "l")   cbLatin.click();
+});

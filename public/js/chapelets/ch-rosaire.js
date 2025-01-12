@@ -78,18 +78,29 @@ function selectType(index)
 {
     goTo("#mysteres");
 
-    selType.focus();
     selType.selectedIndex = index;
 
+    selMysteres.focus();
+
     majMysteres();
+}
+
+// Sélection d'un mystere
+
+function selectMystere(index)
+{
+    goTo("#mysteres");
+
+    selMysteres.focus();
+    selMysteres.selectedIndex = index;
+
+    majInfos();
 }
 
 // Evénements
 
 document.addEventListener("keydown", e => {
     numKey = parseInt(e.key);
-
-    if (e.key == "l")   cbLatin.click();
 
     if (e.key == "m")   goTo("#mysteres");
 
@@ -98,10 +109,5 @@ document.addEventListener("keydown", e => {
     if (e.key == "c")   selectType(2);
     if (e.key == "d")   selectType(3);
 
-    if (numKey >= 1 && numKey <= 5) {
-        selMysteres.focus();
-        selMysteres.selectedIndex = numKey - 1;
-
-        majInfos();
-    }
+    if (numKey >= 1 && numKey <= 5) selectMystere(numKey - 1);
 });
