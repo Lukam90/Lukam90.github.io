@@ -5,6 +5,7 @@
     ],
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
+        { "href" : "ch-liberation", "title" : "Chapelet de libération (*)" },
         { "href" : "ch-sang", "title" : "Chapelet du Précieux Sang de Jésus" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
