@@ -42,27 +42,27 @@ function resetAll()
 
 /* Raccourcis */
 
+// Sélection d'un mystere
+
+function selectMystere(index)
+{
+    goTo("#mysteres");
+
+    selMysteres.focus();
+    selMysteres.selectedIndex = index;
+
+    setIntro();
+}
+
 document.addEventListener("keydown", e => {
     numKey = parseInt(e.key);
 
-    if (e.key == "l")   cbLatin.click();
+    if (numKey >= 1 && numKey <= 5) selectMystere(numKey - 1);
 
-    if (e.key == "m")   goTo("#mysteres");
     if (e.key == "p")   goTo("#dz_pater");
     if (e.key == "a")   goTo("#dz_ave");
     if (e.key == "g")   goTo("#dz_gloria");
     if (e.key == "f")   goTo("#dz_fin");
 
-    if (e.key == "d") {
-        goTo("#dz_serie");
-        
-        btnPremier.focus();
-    }
-
-    if (numKey >= 1 && numKey <= 5) {
-        selMysteres.focus();
-        selMysteres.selectedIndex = numKey - 1;
-
-        setIntro();
-    }
+    if (e.key == "d")   btnPremier.focus();
 });
