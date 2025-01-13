@@ -1,0 +1,59 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set title = "Chapelet de dévotion" %}
+
+{% block content %}
+<p>
+Ce chapelet de dévotion est basé sur la <b>prière de Saint Bernard de Chiaravalle</b>,<br>
+en l'honneur de la <b>plaie inconnue de l’épaule de Jésus-Christ</b>.
+</p>
+
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include spath + "st-bernard.jinja" %}
+
+<!-- Prières -->
+
+{{ mc.anchor("pater", "=") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.grains("trio", "rd_pater") }}
+
+<hr id="ave">
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("trio", "rd_ave") }}
+
+<hr id="gloria">
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("trio", "rd_gloria") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-devotion.js") }}
+
+{% endblock %}
