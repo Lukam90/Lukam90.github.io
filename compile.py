@@ -40,4 +40,6 @@ convert_jinja_single("prieres/devotion")
 exercices = ["ex-base", "ex-nombres"]
 
 #convert_jinja_list("exercices", exercices)
+
+convert_jinja_single("exercices/ex-base")
 convert_jinja_single("exercices/ex-nombres")
