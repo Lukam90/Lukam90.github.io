@@ -6,6 +6,14 @@ const gloriaN1 = $("#rd_gloria_1");
 
 /* Fonctions */
 
+// Sélection d'une section
+
+function setFocus(radioBtn)
+{
+    radioBtn.checked = true;
+    radioBtn.focus();
+}
+
 // Réinitialisation du chapelet
 
 function resetAll()
@@ -19,11 +27,12 @@ function resetAll()
 
 /* Raccourcis */
 
-// Sélection d'une ronde
+// Réinitialisation ou sélection d'une ronde
 
 document.addEventListener("keydown", e => {
     if (e.key == "b" || e.key == "0")   resetAll();
-    if (e.key == "p" || e.key == "1")   goTo("#pater");
-    if (e.key == "a" || e.key == "2")   goTo("#ave");
-    if (e.key == "g" || e.key == "3")   goTo("#gloria");
+
+    if (e.key == "p" || e.key == "1")   setFocus(paterN1);
+    if (e.key == "a" || e.key == "2")   setFocus(aveN1);
+    if (e.key == "g" || e.key == "3")   setFocus(gloriaN1);
 });
