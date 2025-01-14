@@ -1,13 +1,9 @@
 {{ mc.header("m_lumineux", "Les mystères lumineux") }}
 
 <ul class="priere gauche">
-    <li>{{ rmc.option("1. Le baptême de Jésus", "lumineux", 1) }}</li>
-    <li>{{ rmc.option("2. Les noces de Cana", "lumineux", 2) }}</li>
-    <li>{{ rmc.option("3. L'annonce du Royaume de Dieu", "lumineux", 3) }}</li>
-    <li>{{ rmc.option("4. La transfiguration au Mont Thabor", "lumineux", 4) }}</li>
-    <li>{{ rmc.option("5. L'institution de l'eucharistie", "lumineux", 5) }}</li>
+    <li>{{ mc.radio_btn("1. Le baptême de Jésus", "rd_mysteres", "l1", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("2. Les noces de Cana", "rd_mysteres", "l2", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("3. L'annonce du Royaume de Dieu", "rd_mysteres", "l3", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("4. La transfiguration au Mont Thabor", "rd_mysteres", "l4", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("5. L'institution de l'eucharistie", "rd_mysteres", "l5", "resetAll()") }}</li>
 </ul>
-
-<hr />
-
-{{ rmc.dizaine("lumineux") }}

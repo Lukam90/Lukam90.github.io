@@ -1,13 +1,9 @@
 {{ mc.header("m_douloureux", "Les mystères douloureux") }}
 
 <ul class="priere gauche">
-    <li>{{ rmc.option("1. L'agonie de Jésus", "douloureux", 1) }}</li>
-    <li>{{ rmc.option("2. La flagellation", "douloureux", 2) }}</li>
-    <li>{{ rmc.option("3. Le couronnement d'épines", "douloureux", 3) }}</li>
-    <li>{{ rmc.option("4. Le portement de croix", "douloureux", 4) }}</li>
-    <li>{{ rmc.option("5. La crucifixion", "douloureux", 5) }}</li>
+    <li>{{ mc.radio_btn("1. L'agonie de Jésus", "rd_mysteres", "d1", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("2. La flagellation", "rd_mysteres", "d2", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("3. Le couronnement d'épines", "rd_mysteres", "d3", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("4. Le portement de croix", "rd_mysteres", "d4", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("5. La crucifixion", "rd_mysteres", "d5", "resetAll()") }}</li>
 </ul>
-
-<hr />
-
-{{ rmc.dizaine("douloureux") }}

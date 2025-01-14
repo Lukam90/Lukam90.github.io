@@ -1,19 +1,9 @@
-{% import "macros.jinja" as mc %}
+<p>{{ mc.checkbox("Notre Père") }}</p>
 
-{% macro option(title, type, num) %}
-    {% set id = type + "_" + num | string %}
+<p class="gras">Je vous salue Marie</p>
 
-    {{ mc.radio_btn(title, "rd_" + type, id, "resetAll()") }}
-{% endmacro %}
+{{ mc.grains(range(0, 11), "dz_grains") }}
 
-{% macro dizaine(type) %}
-    <p>{{ mc.checkbox("Notre Père") }}</p>
+<p>{{ mc.checkbox("Gloire au Père") }}</p>
 
-    <p class="gras">Je vous salue Marie</p>
-
-    {{ mc.grains(range(0, 11), "dz_grains_" + type) }}
-
-    <p>{{ mc.checkbox("Gloire au Père") }}</p>
-
-    <p>{{ mc.checkbox("Prière de Fatima") }}</p>
-{% endmacro %}
+<p>{{ mc.checkbox("Prière de Fatima") }}</p>

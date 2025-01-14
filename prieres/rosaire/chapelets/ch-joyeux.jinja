@@ -1,13 +1,15 @@
 {{ mc.header("m_joyeux", "Les mystères joyeux") }}
 
+{% macro option(title, type, num) %}
+    {% set id = type + "_" + num | string %}
+
+    {{ mc.radio_btn(title, "rd_" + type, id, "resetAll()") }}
+{% endmacro %}
+
 <ul class="priere gauche">
-    <li>{{ rmc.option("1. L'annonciation", "joyeux", 1) }}</li>
-    <li>{{ rmc.option("2. La visitation", "joyeux", 2) }}</li>
-    <li>{{ rmc.option("3. La nativité", "joyeux", 3) }}</li>
-    <li>{{ rmc.option("4. La présentation de Jésus au temple", "joyeux", 4) }}</li>
-    <li>{{ rmc.option("5. Le recouvrement de Jésus au temple", "joyeux", 5) }}</li>
+    <li>{{ mc.radio_btn("1. L'annonciation", "rd_mysteres", "j1", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("2. La visitation", "rd_mysteres", "j2", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("3. La nativité", "rd_mysteres", "j3", "resetAll()") }}</li>
+    <li>{{ mc.radio_btn("4. La présentation de Jésus au temple", "rd_mysteres", "j4","resetAll()") }}</li>
+    <li>{{ mc.radio_btn("5. Le recouvrement de Jésus au temple", "rd_mysteres", "j5", "resetAll()") }}</li>
 </ul>
-
-<hr />
-
-{{ rmc.dizaine("joyeux") }}
