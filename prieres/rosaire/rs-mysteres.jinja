@@ -1,9 +1,22 @@
-<!-- Macros -->
+<!-- Macro -->
 
 {% macro ex_mystere(id, value) %}
-<input type="radio" name="rd_mysteres" id="{{ id }}" onclick="resetAll()" />
+<input type="radio" name="rd_mysteres" id="{{ id }}" onclick="resetButtons();" />
 <label for="{{ id }}">{{ value }}</label>
 {% endmacro %}
+
+<!-- Types -->
+
+<p>
+    Mystères
+
+    <select id="sel_types" onchange="setBlock();">
+        <option>joyeux (L, S)</option>
+        <option>lumineux (J)</option>
+        <option>douloureux (Ma, V)</option>
+        <option>glorieux (Me, D)</option>
+    </select>
+</p>
 
 <!-- Blocs -->
 
