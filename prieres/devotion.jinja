@@ -11,8 +11,6 @@ Ce chapelet de dévotion est basé sur la <b>prière de Saint Bernard de Chiarav
 en l'honneur de la <b>plaie inconnue de l’épaule de Jésus-Christ</b>.
 </p>
 
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
-
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
@@ -25,25 +23,21 @@ en l'honneur de la <b>plaie inconnue de l’épaule de Jésus-Christ</b>.
 
 {{ mc.anchor("pater", "=") }}
 
-{% include bpath + "notre-pere.jinja" %}
+<p class="gras">Notre Père</p>
 
 {{ mc.grains("trio", "rd_pater") }}
 
-<hr id="ave">
-
-{% include bpath + "ste-marie.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
 {{ mc.grains("trio", "rd_ave") }}
 
-<hr id="gloria">
-
-{% include bpath + "gloire-pere.jinja" %}
+<p class="gras">Gloire au Père</p>
 
 {{ mc.grains("trio", "rd_gloria") }}
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
+<hr />
 
 {% include bpath + "signe-croix.jinja" %}
 
@@ -52,7 +46,6 @@ en l'honneur de la <b>plaie inconnue de l’épaule de Jésus-Christ</b>.
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-devotion.js") }}
 
