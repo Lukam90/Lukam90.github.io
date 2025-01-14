@@ -2,16 +2,40 @@
 
 const checkboxes = $all("input[type='checkbox']");
 
+const intros = $all(".intro");
+
+const selMysteres = $("#sel_mysteres");
+
 const trioPremier = $("#base_trio_1");
+
+let intro;
+
+/* Variables */
+
+let index = 0;
 
 /* Fonctions */
 
+resetAll();
+
+// MAJ de l'intro d'une douzaine
+
+function setIntro()
+{
+    index = selMysteres.selectedIndex;
+
+    intro = intros[index];
+
+    hideAll(intros);
+    showBlock(intro);
+
+    resetButtons();
+}
+
 // Réinitialisation des cases à cocher et des boutons radio
 
-function resetAll()
+function resetButtons()
 {
-    goTo("#");
-
     trioPremier.checked = true;
     
     for (let cb of checkboxes)
@@ -20,16 +44,21 @@ function resetAll()
     }
 }
 
+// Réinitialisation du chapelet
+
+function resetAll()
+{
+    selMysteres.selectedIndex = 0;
+
+    setIntro();
+}
+
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    if (e.key == "0")   resetAll();
+    if (e.key == "0")   goTo("#");
+    if (e.key == "m")   goTo("#mysteres");
+    if (e.key == "f")   goTo("#fin");
 
-    if (e.key == "1")   goTo("#p1");
-    if (e.key == "2")   goTo("#p2");
-    if (e.key == "3")   goTo("#p3");
-    if (e.key == "4")   goTo("#p4");
-    if (e.key == "5")   goTo("#p5");
-
-    if (e.key == "f" || e.key == "6")   goTo("#fin");
+    if (e.key == "r")   resetAll();
 });

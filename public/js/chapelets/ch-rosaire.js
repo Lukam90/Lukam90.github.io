@@ -13,10 +13,7 @@ let block;
 
 /* Variables */
 
-const types = ["joyeux", "lumineux", "douloureux", "glorieux"];
-
 let index = 0;
-let type = "";
 
 /* Fonctions */
 
@@ -27,9 +24,8 @@ setBlock();
 function setBlock()
 {
     index = selTypes.selectedIndex;
-    type = types[index];
 
-    block = $("#m_" + type);
+    block = blocks[index];
 
     hideAll(blocks);
     showBlock(block);
