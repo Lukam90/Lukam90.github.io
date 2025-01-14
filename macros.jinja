@@ -1,14 +1,3 @@
-<!-- Listes > Grains -->
-
-{%
-    set lists = {
-        "vertus" : ["-", "foi", "espérance", "charité"],
-        "dizaine" : range(0, 11),
-        "douzaine" : range(0, 13, 2),
-        "treizaine" : range(0, 14),
-    }
-%}
-
 <!-- Script JS -->
 
 {% macro script(path) %}
@@ -54,18 +43,10 @@
 </ul>
 {% endmacro %}
 
-<!-- Titres -->
-
-<!-- H2 -->
+<!-- Titres (H2) -->
 
 {% macro header(id, title) %}
 <h2 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h2>
-{% endmacro %}
-
-<!-- H3 -->
-
-{% macro subheader(id, title) %}
-<h3 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h3>
 {% endmacro %}
 
 <!-- Ancres -->

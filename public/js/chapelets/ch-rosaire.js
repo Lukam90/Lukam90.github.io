@@ -1,22 +1,32 @@
 /* Eléments */
 
-//
+const checkboxes = $all("input[type='checkbox']");
+
+const trioPremier = $("#base_trio_1");
 
 /* Fonctions */
 
-//
+// Réinitialisation des cases à cocher et des boutons radio
+
+function resetAll()
+{
+    goTo("#");
+
+    trioPremier.checked = true;
+    
+    for (let cb of checkboxes)
+    {
+        cb.checked = false;
+    }
+}
 
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    numKey = parseInt(e.key);
+    if (e.key == "0")   resetAll();
 
-    if (e.key == "m")   goTo("#mysteres");
-
-    if (e.key == "a")   selectType(0);
-    if (e.key == "b")   selectType(1);
-    if (e.key == "c")   selectType(2);
-    if (e.key == "d")   selectType(3);
-
-    if (numKey >= 1 && numKey <= 5) selectMystere(numKey - 1);
+    if (e.key == "j" || e.key == "1")   goTo("#m_joyeux");
+    if (e.key == "l" || e.key == "2")   goTo("#m_douloureux");
+    if (e.key == "d" || e.key == "3")   goTo("#m_lumineux");
+    if (e.key == "g" || e.key == "4")   goTo("#m_glorieux");
 });
