@@ -1,11 +1,17 @@
 {% import "macros.jinja" as mc %}
 
-{% macro dizaine(code) %}
+{% macro option(title, type, num) %}
+    {% set id = type + "_" + num | string %}
+
+    {{ mc.radio_btn(title, "rd_" + type, id, "resetAll()") }}
+{% endmacro %}
+
+{% macro dizaine(type) %}
     <p>{{ mc.checkbox("Notre Père") }}</p>
 
     <p class="gras">Je vous salue Marie</p>
 
-    {{ mc.grains(range(0, 11), "dz_grains_" + code) }}
+    {{ mc.grains(range(0, 11), "dz_grains_" + type) }}
 
     <p>{{ mc.checkbox("Gloire au Père") }}</p>
 
