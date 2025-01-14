@@ -1,13 +1,15 @@
-{% include rpath + "rs-mysteres.jinja" %}
+{% import "macros.jinja" as mc %}
 
-<!-- Prières -->
+{% macro dizaine(fruit, list = []) %}
+<p>Fruit : <b>{{ fruit }}</b></p>
 
-{{ mc.checkbox("Notre Père") }}
+<p>{{ mc.checkbox("Notre Père") }}</p>
 
 <p class="gras">Je vous salue Marie</p>
 
-{{ mc.grains("dizaine", "dz_grains") }}
+{{ mc.grains(range(0, 11), "dz_grains") }}
 
-{{ mc.checkbox("Gloire au Père") }}
+<p>{{ mc.checkbox("Gloire au Père") }}</p>
 
-{{ mc.checkbox("Prière de Fatima") }}
+<p>{{ mc.checkbox("Prière de Fatima") }}</p>
+{% endmacro %}

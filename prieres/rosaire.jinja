@@ -3,7 +3,11 @@
 {% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
 
+{% set cpath = rpath + "chapelets/" %}
+
 {% set title = "Chapelet du rosaire" %}
+
+{% import rpath + "rs-dizaine.jinja" as rmc %}
 
 {% block content %}
 <p>
@@ -27,6 +31,8 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 <!-- Mystères -->
 
 {{ mc.anchor("mysteres", "=") }}
+
+{% include cpath + "ch-joyeux.jinja" %}
 
 {% include rpath + "rs-dizaine.jinja" %}
 

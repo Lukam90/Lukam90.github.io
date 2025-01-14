@@ -54,10 +54,18 @@
 </ul>
 {% endmacro %}
 
-<!-- Titres (H2) -->
+<!-- Titres -->
+
+<!-- H2 -->
 
 {% macro header(id, title) %}
 <h2 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h2>
+{% endmacro %}
+
+<!-- H3 -->
+
+{% macro subheader(id, title) %}
+<h3 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h3>
 {% endmacro %}
 
 <!-- Ancres -->
@@ -95,12 +103,10 @@
 <!-- Case à cocher -->
 
 {% macro checkbox(value) %}
-<p>
-    <label>
-        <input type="checkbox" name="cb_check">
-        {{ value }}
-    </label>
-</p>
+<label>
+    <input type="checkbox" name="cb_check">
+    {{ value }}
+</label>
 {% endmacro %}
 
 <!-- Bouton radio -->
