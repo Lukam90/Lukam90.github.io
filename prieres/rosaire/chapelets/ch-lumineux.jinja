@@ -1,29 +1,13 @@
 {{ mc.header("m_lumineux", "Les mystères lumineux") }}
 
-<h3>1. Le baptême de Jésus</h3>
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("1. Le baptême de Jésus", "rd_lumineux", "l1") }}</li>
+    <li>{{ mc.radio_btn("2. Les noces de Cana", "rd_lumineux", "l2") }}</li>
+    <li>{{ mc.radio_btn("3. L'annonce du Royaume de Dieu", "rd_lumineux", "l3") }}</li>
+    <li>{{ mc.radio_btn("4. La transfiguration au Mont Thabor", "rd_lumineux", "l4") }}</li>
+    <li>{{ mc.radio_btn("5. L'institution de l'eucharistie", "rd_lumineux", "l5") }}</li>
+</ul>
 
-<p>Fruit : <b>la fidelité aux promesses de notre baptême</b></p>
+<hr />
 
-{{ rmc.dizaine("l1") }}
-
-<h3>2. Les noces de Cana</h3>
-
-<p>Fruit : <b>la confiance en Marie</b></p>
-
-{{ rmc.dizaine("l2") }}
-
-<h3>3. L'annonce du Royaume de Dieu</h3>
-
-<p>Fruit : <b>la conversion des coeurs</b></p>
-
-{{ rmc.dizaine("l3") }}
-
-<h3>4. La transfiguration au Mont Thabor</h3>
-
-<p>Fruit : <b>la grâce d'une vie intérieure</b></p>
-
-{{ rmc.dizaine("l4") }}
-
-<h3>5. L'institution de l'eucharistie</h3>
-
-<p>Fruit : <b>l'amour de l'eucharistie</b></p>
+{{ rmc.dizaine("lumineux") }}

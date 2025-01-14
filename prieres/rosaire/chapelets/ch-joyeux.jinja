@@ -1,31 +1,13 @@
 {{ mc.header("m_joyeux", "Les mystères joyeux") }}
 
-<h3>1. L'annonciation</h3>
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("1. L'annonciation", "rd_joyeux", "j1") }}</li>
+    <li>{{ mc.radio_btn("2. La visitation", "rd_joyeux", "j2") }}</li>
+    <li>{{ mc.radio_btn("3. La nativité", "rd_joyeux", "j3") }}</li>
+    <li>{{ mc.radio_btn("4. La présentation de Jésus au temple", "rd_joyeux", "j4") }}</li>
+    <li>{{ mc.radio_btn("5. Le recouvrement de Jésus au temple", "rd_joyeux", "j5") }}</li>
+</ul>
 
-<p>Fruit : <b>l'humilité</b></p>
+<hr />
 
-{{ rmc.dizaine("j1") }}
-
-<h3>2. La visitation</h3>
-
-<p>Fruit : <b>la charité fraternelle</b></p>
-
-{{ rmc.dizaine("j2") }}
-
-<h3>3. La nativité</h3>
-
-<p>Fruit : <b>l'esprit de pauvreté</b></p>
-
-{{ rmc.dizaine("j3") }}
-
-<h3>4. La présentation de Jésus au temple</h3>
-
-<p>Fruit : <b>la pureté et l'esprit d'obéissance</b></p>
-
-{{ rmc.dizaine("j4") }}
-
-<h3>5. Le recouvrement de Jésus au temple</h3>
-
-<p>Fruit : <b>la recherche de Dieu en tout</b></p>
-
-{{ rmc.dizaine("j5") }}
+{{ rmc.dizaine("joyeux") }}
