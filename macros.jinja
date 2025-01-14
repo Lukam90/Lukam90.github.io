@@ -97,11 +97,13 @@
 
 <!-- Case à cocher -->
 
-{% macro checkbox(name, value) %}
-<label>
-    <input type="checkbox" name="{{ name }}">
-    {{ value }}
-</label>
+{% macro checkbox(value) %}
+<p>
+    <label>
+        <input type="checkbox" name="cb_check">
+        {{ value }}
+    </label>
+</p>
 {% endmacro %}
 
 <!-- Bouton radio -->
@@ -123,18 +125,6 @@
         {{ radio_btn(val, name, id, event) }}
     {% endfor %}
     </p>
-{% endmacro %}
-
-<!-- Liste de choix -->
-
-{% macro select(id, start = 1, end = 5, default = False) %}
-<select id="{{ id }}" onchange="checkFirst();">
-    {% if default %}<option>---</option>{% endif %}
-
-    {% for nb in range(start, end + 1) %}
-    <option>n°{{ nb }}</option>
-    {% endfor %}
-</select>
 {% endmacro %}
 
 <!-- Ligne d'un tableau -->

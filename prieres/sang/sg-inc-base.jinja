@@ -6,12 +6,7 @@
 
 {{ mc.anchor("credo") }}
 
-<p>
-    <label>
-        <input type="checkbox" name="cb_priere">
-        Credo
-    </label>
-</p>
+{{ mc.checkbox("Credo") }}
 
 {% include spath + "sg-louange.jinja" %}
 
@@ -19,22 +14,14 @@
 
 {{ mc.anchor("b_prieres") }}
 
-<p>
-    <label>
-        <input type="checkbox" name="cb_priere">
-        Notre Père
-    </label>
-</p>
+{{ mc.checkbox("Notre Père") }}
 
 <p class="gras">Je vous salue Marie</p>
 
 {{ mc.grains("vertus", "ste_marie_vertus") }}
 
-<p>
-    <label>
-        <input type="checkbox" name="cb_priere">
-        Gloire au Père
-    </label>
-</p>
+{{ mc.checkbox("Gloire au Père") }}
+
+{{ mc.anchor("b_louanges") }}
 
 {% include spath + "sg-louange.jinja" %}
