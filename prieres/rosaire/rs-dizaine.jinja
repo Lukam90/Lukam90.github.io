@@ -1,15 +1,13 @@
 {% import "macros.jinja" as mc %}
 
-{% macro dizaine(fruit, list = []) %}
-<p>Fruit : <b>{{ fruit }}</b></p>
+{% macro dizaine(code) %}
+    <p>{{ mc.checkbox("Notre Père") }}</p>
 
-<p>{{ mc.checkbox("Notre Père") }}</p>
+    <p class="gras">Je vous salue Marie</p>
 
-<p class="gras">Je vous salue Marie</p>
+    {{ mc.grains(range(0, 11), "dz_grains_" + code) }}
 
-{{ mc.grains(range(0, 11), "dz_grains") }}
+    <p>{{ mc.checkbox("Gloire au Père") }}</p>
 
-<p>{{ mc.checkbox("Gloire au Père") }}</p>
-
-<p>{{ mc.checkbox("Prière de Fatima") }}</p>
+    <p>{{ mc.checkbox("Prière de Fatima") }}</p>
 {% endmacro %}
