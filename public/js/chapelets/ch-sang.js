@@ -13,6 +13,7 @@ let intro;
 /* Variables */
 
 let index = 0;
+let numKey = 0;
 
 /* Fonctions */
 
@@ -44,6 +45,18 @@ function resetButtons()
     }
 }
 
+// Sélection rapide
+
+function selectTo(index)
+{
+    goTo("#mysteres");
+
+    selMysteres.selectedIndex = index;
+    selMysteres.focus();
+
+    setIntro();
+}
+
 // Réinitialisation du chapelet
 
 function resetAll()
@@ -56,9 +69,12 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
+    numKey = parseInt(e.key);
+
     if (e.key == "0")   goTo("#");
-    if (e.key == "m")   goTo("#mysteres");
     if (e.key == "f")   goTo("#fin");
+
+    if (numKey >= 1 && numKey <= 5) selectTo(numKey - 1);
 
     if (e.key == "r")   resetAll();
 });
