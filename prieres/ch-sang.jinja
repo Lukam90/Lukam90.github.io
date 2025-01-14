@@ -10,7 +10,7 @@
 {% block content %}
 <!-- Base -->
 
-<p class="gras">(Signe de croix)</p>
+<p>(Signe de croix)</p>
 
 {% include spath + "sg-inc-base.jinja" %}
 
@@ -22,7 +22,11 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p class="gras">(Signe de croix)</p>
+{% include spath + "sg-inc-fin.jinja" %}
+
+<hr />
+
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
