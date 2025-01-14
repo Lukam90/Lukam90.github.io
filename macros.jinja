@@ -92,8 +92,8 @@
 
 <!-- Bouton radio -->
 
-{% macro radio_btn(value, name, id) %}
-<input type="radio" name="{{ name }}" id="{{ id }}" />
+{% macro radio_btn(value, name, id, event = None) %}
+<input type="radio" name="{{ name }}" id="{{ id }}" {% if event %} onclick="{{ event }}" {% endif %} />
 <label for="{{ id }}">{{ value }}</label>
 {% endmacro %}
 
