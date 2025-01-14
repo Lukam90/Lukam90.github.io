@@ -1,0 +1,60 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Prières de base" %}
+
+{% block content %}
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+<h2>Signe de croix</h2>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+<h2>Credo - Je crois en Dieu</h2>
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("pater") }}
+
+<h2>Notre Père</h2>
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ave") }}
+
+<h2>Je vous salue Marie</h2>
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+<h2>Gloire au Père</h2>
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("fatima") }}
+
+<h2>Prière de Fatima</h2>
+
+{% include bpath + "priere-fatima.jinja" %}
+
+{{ mc.anchor("salve") }}
+
+<h2>Salut ô Reine</h2>
+
+{% include bpath + "salut-reine.jinja" %}
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-base.js") }}
+
+{% endblock %}

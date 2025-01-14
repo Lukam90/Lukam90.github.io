@@ -4,6 +4,7 @@
         { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
     ],
     "prieres" : [
+        { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "devotion", "title" : "Chapelet de dévotion" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
