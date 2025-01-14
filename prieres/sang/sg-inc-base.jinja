@@ -1,0 +1,40 @@
+{% include spath + "sg-chant.jinja" %}
+
+{{ mc.anchor("st_esprit") }}
+
+{% include spath + "sg-esprit-saint.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+<p>
+    <label>
+        <input type="checkbox" name="cb_priere">
+        Credo
+    </label>
+</p>
+
+{% include spath + "sg-louange.jinja" %}
+
+{% include spath + "sg-coeur.jinja" %}
+
+{{ mc.anchor("b_prieres") }}
+
+<p>
+    <label>
+        <input type="checkbox" name="cb_priere">
+        Notre Père
+    </label>
+</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+{{ mc.grains("vertus", "ste_marie_vertus") }}
+
+<p>
+    <label>
+        <input type="checkbox" name="cb_priere">
+        Gloire au Père
+    </label>
+</p>
+
+{% include spath + "sg-louange.jinja" %}

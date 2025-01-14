@@ -6,7 +6,10 @@
 {% set title = "Prières de base" %}
 
 {% block content %}
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+<p>
+    <input type="checkbox" id="v_latine" onchange="switchLang();" />
+    <label for="v_latine">Version latine</label>
+</p>
 
 <h2>Signe de croix</h2>
 
