@@ -14,15 +14,13 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 
 <p>Les {{ mc.link("/prieres/litanies.html", "Litanies de Lorette") }} sont complémentaires.</p>
 
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
-
-<hr />
-
-{% include bpath + "signe-croix.jinja" %}
+<p>Les {{ mc.link("/prieres/ex-base.html", "prières de base") }} sont listées sur une page dédiée.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
+
+<p class="gras">(Signe de croix)</p>
 
 {% include rpath + "rs-base.jinja" %}
 

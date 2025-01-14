@@ -1,0 +1,308 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chapelet du rosaire</title>
+
+    <link rel="stylesheet" href="/public/css/prieres.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Chapelet du rosaire</h1>
+
+        
+<p>
+Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'application 
+
+<a href="https://rosario.app/" class="bleu" target="_blank">Rosario</a>
+ par
+
+<a href="https://hozana.org/" class="bleu" target="_blank">Hozana</a>
+.
+</p>
+
+<p>Les 
+<a href="/prieres/litanies.html" class="bleu" target="_blank">Litanies de Lorette</a>
+ sont complémentaires.</p>
+
+<p>Les 
+<a href="/prieres/ex-base.html" class="bleu" target="_blank">prières de base</a>
+ sont listées sur une page dédiée.</p>
+
+<!-- Base -->
+
+
+<div id="base">
+    <a href="#base">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p class="gras">(Signe de croix)</p>
+
+<p>
+
+<input type="checkbox" id="cb_credo" onchange="" />
+<label for="cb_credo"></label>
+ <b>Credo</b>
+</p>
+
+<p>
+
+<input type="checkbox" id="cb_pater" onchange="" />
+<label for="cb_pater"></label>
+ <b>Notre Père</b>
+</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+
+    
+
+    <p class="grains" id="ste_marie_vertus">
+    
+        
+
+        
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_1" value="-"  />
+<label for="ste_marie_vertus_1">-</label>
+
+    
+        
+
+        
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_2" value="foi"  />
+<label for="ste_marie_vertus_2">foi</label>
+
+    
+        
+
+        
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_3" value="espérance"  />
+<label for="ste_marie_vertus_3">espérance</label>
+
+    
+        
+
+        
+<input type="radio" name="ste_marie_vertus" id="ste_marie_vertus_4" value="charité"  />
+<label for="ste_marie_vertus_4">charité</label>
+
+    
+    </p>
+
+
+<p>
+
+<input type="checkbox" id="cb_gloria" onchange="" />
+<label for="cb_gloria"></label>
+ <b>Gloire au Père</b>
+</p>
+
+<!-- Mystères -->
+
+
+<div id="mysteres">
+    <a href="#mysteres">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
+
+<p>
+    <select id="sel_type" onchange="majMysteres();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option id="t_glorieux">glorieux</option>
+    </select>
+
+    <select id="sel_mysteres" onchange="majInfos();">
+        <option>1. L'annonciation</option>
+        <option>2. La visitation</option>
+        <option>3. La nativité</option>
+        <option>4. La présentation de Jésus au temple</option>
+        <option>5. Le recouvrement de Jésus au temple</option>
+    </select>
+</p>
+
+<p>Fruit : <span id="fruit" class="gras">l'humilité</span></p>
+
+<!-- Prières -->
+
+<p>
+
+<input type="checkbox" id="cb_dz_pater" onchange="" />
+<label for="cb_dz_pater"></label>
+ <b>Notre Père</b>
+</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+
+    
+
+    <p class="grains" id="dz_grains">
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_1" value="0"  />
+<label for="dz_grains_1">0</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_2" value="1"  />
+<label for="dz_grains_2">1</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_3" value="2"  />
+<label for="dz_grains_3">2</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_4" value="3"  />
+<label for="dz_grains_4">3</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_5" value="4"  />
+<label for="dz_grains_5">4</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_6" value="5"  />
+<label for="dz_grains_6">5</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_7" value="6"  />
+<label for="dz_grains_7">6</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_8" value="7"  />
+<label for="dz_grains_8">7</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_9" value="8"  />
+<label for="dz_grains_9">8</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_10" value="9"  />
+<label for="dz_grains_10">9</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_11" value="10"  />
+<label for="dz_grains_11">10</label>
+
+    
+    </p>
+
+
+<p>
+
+<input type="checkbox" id="cb_dz_gloria" onchange="" />
+<label for="cb_dz_gloria"></label>
+ <b>Gloire au Père</b>
+</p>
+
+<p>
+
+<input type="checkbox" id="cb_dz_fatima" onchange="" />
+<label for="cb_dz_fatima"></label>
+ <b>Prière de Fatima</b>
+</p>
+
+
+<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
+
+
+<!-- Fin -->
+
+
+<div id="fin">
+    <a href="#fin">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p class="fr">(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
+
+<p class="latin">(In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>. Amen.)</p>
+
+
+<p><a href="#" class="bleu" >Recommencer</a></p>
+
+
+<!-- Scripts -->
+
+
+<script src="/public/js/utils.js"></script>
+
+
+<script src="/public/js/latin.js"></script>
+
+
+
+<script src="/public/js/mysteres/ch-joyeux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-lumineux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-douloureux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-glorieux.js"></script>
+
+
+
+<script src="/public/js/chapelets/ch-rosaire.js"></script>
+
+
+
+    </main>
+</body>

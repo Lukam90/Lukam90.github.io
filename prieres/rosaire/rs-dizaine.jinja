@@ -2,18 +2,18 @@
 
 <!-- Prières -->
 
-{% include bpath + "notre-pere.jinja" %}
+<p>
+{{ mc.checkbox("cb_dz_pater", value) }} <b>Notre Père</b>
+</p>
 
-<hr />
-
-{% include bpath + "ste-marie.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
-<hr />
+<p>
+{{ mc.checkbox("cb_dz_gloria", value) }} <b>Gloire au Père</b>
+</p>
 
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.anchor("ex_fatima") }}
-
-{% include bpath + "priere-fatima.jinja" %}
+<p>
+{{ mc.checkbox("cb_dz_fatima", value) }} <b>Prière de Fatima</b>
+</p>
