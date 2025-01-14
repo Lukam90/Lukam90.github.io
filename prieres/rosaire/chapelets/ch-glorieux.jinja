@@ -1,43 +1,13 @@
 {{ mc.header("m_glorieux", "Les mystères glorieux") }}
 
 <ul class="priere gauche">
-    <li>{{ mc.radio_btn("", "rd_glorieux", "g1") }}</li>
-    <li>{{ mc.radio_btn("", "rd_glorieux", "g2") }}</li>
-    <li>{{ mc.radio_btn("", "rd_glorieux", "g3") }}</li>
-    <li>{{ mc.radio_btn("", "rd_glorieux", "g4") }}</li>
-    <li>{{ mc.radio_btn("", "rd_glorieux", "g5") }}</li>
+    <li>{{ mc.radio_btn("1. La résurrection de Jésus", "rd_glorieux", "g1") }}</li>
+    <li>{{ mc.radio_btn("2. L'ascension de Jésus", "rd_glorieux", "g2") }}</li>
+    <li>{{ mc.radio_btn("3. La Pentecôte", "rd_glorieux", "g3") }}</li>
+    <li>{{ mc.radio_btn("4. L'Assomption de Marie", "rd_glorieux", "g4") }}</li>
+    <li>{{ mc.radio_btn("5. Le couronnement de Marie", "rd_glorieux", "g5") }}</li>
 </ul>
 
 <hr />
 
 {{ rmc.dizaine("glorieux") }}
-
-<h3>1. La résurrection de Jésus</h3>
-
-<p>Fruit : <b>la foi et la conversion des coeurs</b></p>
-
-{{ rmc.dizaine("g1") }}
-
-<h3>2. L'ascension de Jésus</h3>
-
-<p>Fruit : <b>l'espérance et le désir du ciel</b></p>
-
-{{ rmc.dizaine("g2") }}
-
-<h3>3. La Pentecôte</h3>
-
-<p>Fruit : <b>la charité et le zèle apostolique</b></p>
-
-{{ rmc.dizaine("g3") }}
-
-<h3>4. L'Assomption de Marie</h3>
-
-<p>Fruit : <b>la grâce d'une bonne mort et la dévotion filiale à Marie</b></p>
-
-{{ rmc.dizaine("g4") }}
-
-<h3>5. Le couronnement de Marie</h3>
-
-<p>Fruit : <b>la persévérance finale et la confiance en Marie</b></p>
-
-{{ rmc.dizaine("g5") }}
