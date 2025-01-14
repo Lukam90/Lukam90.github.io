@@ -1,10 +1,27 @@
+<!-- Macros -->
+
+{% macro ex_mystere(id, value) %}
+<input type="radio" name="rd_mysteres" id="{{ id }}" onclick="resetAll()" />
+<label for="{{ id }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Blocs -->
+
+<div class="mysteres" id="m_joyeux">
 {% include cpath + "ch-joyeux.jinja" %}
+</div>
 
+<div class="mysteres" id="m_lumineux">
 {% include cpath + "ch-lumineux.jinja" %}
+</div>
 
+<div class="mysteres" id="m_douloureux">
 {% include cpath + "ch-douloureux.jinja" %}
+</div>
 
+<div class="mysteres" id="m_glorieux">
 {% include cpath + "ch-glorieux.jinja" %}
+</div>
 
 <hr />
 

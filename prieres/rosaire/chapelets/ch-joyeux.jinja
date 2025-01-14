@@ -1,15 +1,9 @@
-{{ mc.header("m_joyeux", "Les mystères joyeux") }}
-
-{% macro option(title, type, num) %}
-    {% set id = type + "_" + num | string %}
-
-    {{ mc.radio_btn(title, "rd_" + type, id, "resetAll()") }}
-{% endmacro %}
+<h2>Les mystères joyeux</h2>
 
 <ul class="priere gauche">
-    <li>{{ mc.radio_btn("1. L'annonciation", "rd_mysteres", "j1", "resetAll()") }}</li>
-    <li>{{ mc.radio_btn("2. La visitation", "rd_mysteres", "j2", "resetAll()") }}</li>
-    <li>{{ mc.radio_btn("3. La nativité", "rd_mysteres", "j3", "resetAll()") }}</li>
-    <li>{{ mc.radio_btn("4. La présentation de Jésus au temple", "rd_mysteres", "j4","resetAll()") }}</li>
-    <li>{{ mc.radio_btn("5. Le recouvrement de Jésus au temple", "rd_mysteres", "j5", "resetAll()") }}</li>
+    <li>{{ ex_mystere("j1", "1. L'annonciation") }}</li>
+    <li>{{ ex_mystere("j2", "2. La visitation") }}</li>
+    <li>{{ ex_mystere("j3", "3. La nativité") }}</li>
+    <li>{{ ex_mystere("j4", "4. La présentation de Jésus au temple") }}</li>
+    <li>{{ ex_mystere("j5", "5. Le recouvrement de Jésus au temple") }}</li>
 </ul>
