@@ -1,5 +1,7 @@
 /* Eléments */
 
+const checkboxes = $all("input[type='checkbox']");
+
 const selRondes = $("#sel_rondes");
 
 const basePremier = $("#base_trio_1");
@@ -28,9 +30,14 @@ function selectRonde(index) {
 
 function resetButtons()
 {
-    checkButton(basePremier);
-    checkButton(dzPremier);
-    checkButton(finPremier);
+    basePremier.checked = true;
+    dzPremier.checked = true;
+    finPremier.checked = true;
+
+    for (let cb of checkboxes)
+    {
+        cb.checked = false;
+    }
 }
 
 // Réinitialisation du chapelet
@@ -38,6 +45,8 @@ function resetButtons()
 function resetAll()
 {
     goTo("#");
+
+    selRondes.selectedIndex = 0;
 
     resetButtons();
 }
