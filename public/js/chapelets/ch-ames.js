@@ -16,6 +16,8 @@ let numKey = 0;
 // Sélection du numéro de ronde
 
 function selectRonde(index) {
+    goTo("#rondes");
+
     resetButtons();
 
     selRondes.selectedIndex = index;
