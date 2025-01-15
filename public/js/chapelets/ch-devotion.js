@@ -1,4 +1,4 @@
-// Eléments
+/* Eléments */
 
 const paterN1 = $("#rd_pater_1");
 const aveN1 = $("#rd_ave_1");
