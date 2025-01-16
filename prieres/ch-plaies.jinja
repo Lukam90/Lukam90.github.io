@@ -1,0 +1,38 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet des saintes plaies" %}
+
+{% block content %}
+
+<!-- Base -->
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include spath + "ex-intro.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{% include spath + "ex-plaies.jinja" %}
+
+<hr />
+
+<p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes. (x 1)</p>
+
+<p>Mon Jésus, pardon et miséricorde, par les mérites de tes saintes plaies. (x 10)</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes. (x 3)</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{% endblock %}

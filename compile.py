@@ -27,13 +27,14 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Prières
 
-prieres = ["ex-base", "litanies", "rosaire"]
+prieres = ["ch-plaies", "ch-rosaire", "ex-base", "litanies", ]
 
 #convert_jinja_list("prieres", prieres)
 
+convert_jinja_single("prieres/ch-plaies")
+#convert_jinja_single("prieres/ch-rosaire")
 #convert_jinja_single("prieres/ex-base")
 #convert_jinja_single("prieres/litanies")
-convert_jinja_single("prieres/rosaire")
 
 ## Exercices
 

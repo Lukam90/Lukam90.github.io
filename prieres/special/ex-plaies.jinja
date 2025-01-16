@@ -1,0 +1,18 @@
+<!-- Macro -->
+
+{% macro ex_option(id, value) %}
+<input type="radio" name="rd_plaie" id="{{ id }}" />
+<label class="txt_mystere" for="{{ id }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Rondes -->
+
+<div class="priere gauche">
+    <ul>
+        <li>{{ ex_option("p1", "1. les mains") }}</li>
+        <li>{{ ex_option("p2", "2. les pieds") }}</li>
+        <li>{{ ex_option("p3", "3. le dos") }}</li>
+        <li>{{ ex_option("p4", "4. la tête") }}</li>
+        <li>{{ ex_option("p5", "5. le coeur") }}</li>
+    </ul>
+</div>
