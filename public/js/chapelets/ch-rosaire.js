@@ -76,4 +76,15 @@ document.addEventListener("keydown", e => {
     if (numKey == 0)   resetAll();
 
     if (numKey >= 1 && numKey <= 5) selectMystere(numKey - 1);
+
+    if (e.key == "a") {
+        goTo("#dz_ave");
+
+        dzPremier.focus();
+        dzPremier.click();
+    }
+
+    if (e.key == "p")   goTo("#dizaines");
+    if (e.key == "g")   goTo("#dz_gloria");
+    if (e.key == "f")   goTo("#dz_fatima");
 });
