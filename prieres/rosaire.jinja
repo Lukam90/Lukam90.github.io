@@ -22,7 +22,12 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+<p>
+    <input type="checkbox" id="v_latine" onchange="switchLang();" />
+    <label for="v_latine">Version latine</label>
+</p>
+
+{% include bpath + "signe-croix.jinja" %}
 
 {% include rpath + "rs-base.jinja" %}
 
@@ -40,13 +45,14 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 
 {{ mc.anchor("fin", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-rosaire.js") }}
 

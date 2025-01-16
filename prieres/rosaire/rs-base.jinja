@@ -1,9 +1,17 @@
-<p>{{ mc.checkbox("Credo") }}</p>
+{{ mc.anchor("b_credo") }}
 
-<p>{{ mc.checkbox("Notre Père") }}</p>
+{% include bpath + "credo.jinja" %}
 
-<p>Je vous salue Marie</p>
+{{ mc.anchor("b_pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("b_ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
 
 {{ mc.grains(["-", "foi", "espérance", "charité"], "base_trio") }}
 
-<p>{{ mc.checkbox("Gloire au Père") }}</p>
+{{ mc.anchor("b_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}

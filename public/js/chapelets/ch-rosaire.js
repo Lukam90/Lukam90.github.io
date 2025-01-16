@@ -1,7 +1,5 @@
 /* Eléments */
 
-const checkboxes = $all("input[type='checkbox']");
-
 const blocks = $all(".mysteres");
 
 const selTypes = $("#sel_types");
