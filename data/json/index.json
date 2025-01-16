@@ -6,12 +6,9 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "ch-ames", "title" : "Chapelet du salut des âmes" },
-        { "href" : "ch-sang", "title" : "Chapelet du précieux sang" },
-        { "href" : "ch-devotion", "title" : "Chapelet de dévotion" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
     "exercices" : [
-        { "href" : "ex-base", "title" : "Cohérence cardiaque" }
+        { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
     ]
 }
