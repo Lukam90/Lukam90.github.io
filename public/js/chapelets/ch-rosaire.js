@@ -12,7 +12,7 @@ let radioBtn, label;
 
 /* Variables */
 
-let index = 0, loopIndex = 0; numKey = 0;
+let index = 0, numKey = 0;
 let type = "joyeux";
 let mysteres = [];
 
@@ -29,11 +29,9 @@ function majMysteres()
     type = types[index];
     mysteres = rosaire[type];
 
-    loopIndex = 0;
-
-    for (let label of mLabels)
+    for (let i = 0 ; i < 5 ; i++)
     {
-        label.textContent = mysteres[loopIndex++];
+        mLabels[i].textContent = mysteres[i];
     }
 
     selectMystere(0);
@@ -63,11 +61,11 @@ function resetButtons()
 
 function resetAll()
 {
-    goTo("#");
-
     selTypes.selectedIndex = 0;
 
     majMysteres();
+
+    goTo("#");
 }
 
 /* Raccourcis */
