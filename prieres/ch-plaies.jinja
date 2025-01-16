@@ -33,6 +33,13 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-{{ mc.return_link() }}
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-plaies.js") }}
 
 {% endblock %}
