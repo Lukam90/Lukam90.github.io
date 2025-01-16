@@ -244,11 +244,11 @@ et in saecula saeculorum.<br>
 Amen.
 </p>
 
-<!-- Mystères -->
+<!-- Rondes -->
 
 
-<div id="mysteres">
-    <a href="#mysteres">
+<div id="rondes">
+    <a href="#rondes">
     
     ===
     
@@ -265,7 +265,7 @@ Amen.
 <p>
     Mystères
 
-    <select id="sel_types" onchange="setBlock();">
+    <select id="sel_types" onchange="majMysteres();">
         <option>joyeux (L, S)</option>
         <option>lumineux (J)</option>
         <option>douloureux (Ma, V)</option>
@@ -273,111 +273,36 @@ Amen.
     </select>
 </p>
 
-<!-- Blocs -->
+<!-- Options -->
 
-<div id="m_joyeux" class="priere gauche">
-    <ul class="mysteres">
+<div class="priere gauche">
+    <ul>
         <li>
-<input type="radio" name="rd_mysteres" id="j1" onclick="resetButtons();" />
-<label for="j1">1. L'annonciation</label>
+<input type="radio" name="rd_mystere" id="m1" onclick="resetButtons();" />
+<label class="txt_mystere" for="m1">1. L'annonciation</label>
 </li>
         <li>
-<input type="radio" name="rd_mysteres" id="j2" onclick="resetButtons();" />
-<label for="j2">2. La visitation</label>
+<input type="radio" name="rd_mystere" id="m2" onclick="resetButtons();" />
+<label class="txt_mystere" for="m2">2. La visitation</label>
 </li>
         <li>
-<input type="radio" name="rd_mysteres" id="j3" onclick="resetButtons();" />
-<label for="j3">3. La nativité</label>
+<input type="radio" name="rd_mystere" id="m3" onclick="resetButtons();" />
+<label class="txt_mystere" for="m3">3. La nativité</label>
 </li>
         <li>
-<input type="radio" name="rd_mysteres" id="j4" onclick="resetButtons();" />
-<label for="j4">4. La présentation de Jésus au temple</label>
+<input type="radio" name="rd_mystere" id="m4" onclick="resetButtons();" />
+<label class="txt_mystere" for="m4">4. La présentation de Jésus au temple</label>
 </li>
         <li>
-<input type="radio" name="rd_mysteres" id="j5" onclick="resetButtons();" />
-<label for="j5">5. Le recouvrement de Jésus au temple</label>
-</li>
-    </ul>
-</div>
-
-<div id="m_lumineux" class="priere gauche">
-    <ul class="mysteres">
-        <li>
-<input type="radio" name="rd_mysteres" id="l1" onclick="resetButtons();" />
-<label for="l1">1. Le baptême de Jésus</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="l2" onclick="resetButtons();" />
-<label for="l2">2. Les noces de Cana</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="l3" onclick="resetButtons();" />
-<label for="l3">3. L'annonce du Royaume de Dieu</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="l4" onclick="resetButtons();" />
-<label for="l4">4. La transfiguration au Mont Thabor</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="l5" onclick="resetButtons();" />
-<label for="l5">5. L'institution de l'eucharistie</label>
-</li>
-    </ul>
-</div>
-
-<div id="m_douloureux" class="priere gauche">
-    <ul class="mysteres">
-        <li>
-<input type="radio" name="rd_mysteres" id="d1" onclick="resetButtons();" />
-<label for="d1">1. L'agonie de Jésus</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="d2" onclick="resetButtons();" />
-<label for="d2">2. La flagellation</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="d3" onclick="resetButtons();" />
-<label for="d3">3. Le couronnement d'épines</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="d4" onclick="resetButtons();" />
-<label for="d4">4. Le portement de croix</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="d5" onclick="resetButtons();" />
-<label for="d5">5. La crucifixion</label>
-</li>
-    </ul>
-</div>
-
-<div id="m_glorieux" class="priere gauche">
-    <ul class="mysteres ">
-        <li>
-<input type="radio" name="rd_mysteres" id="g1" onclick="resetButtons();" />
-<label for="g1">1. La résurrection de Jésus</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="g2" onclick="resetButtons();" />
-<label for="g2">2. L'ascension de Jésus</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="g3" onclick="resetButtons();" />
-<label for="g3">3. La Pentecôte</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="g4" onclick="resetButtons();" />
-<label for="g4">4. L'Assomption de Marie</label>
-</li>
-        <li>
-<input type="radio" name="rd_mysteres" id="g5" onclick="resetButtons();" />
-<label for="g5">5. Le couronnement de Marie</label>
+<input type="radio" name="rd_mystere" id="m5" onclick="resetButtons();" />
+<label class="txt_mystere" for="m5">5. Le recouvrement de Jésus au temple</label>
 </li>
     </ul>
 </div>
 
 
-<div id="dz_pater">
-    <a href="#dz_pater">
+<div id="dizaines">
+    <a href="#dizaines">
     
     ***
     
@@ -411,15 +336,7 @@ sed libera nos a malo.<br>
 Amen.
 </p>
 
-
-<div id="dz_ave">
-    <a href="#dz_ave">
-    
-    ***
-    
-    </a>
-</div>
-
+<hr />
 
 <p class="fr">
 Je vous salue Marie, pleine de grâce,<br>
@@ -526,15 +443,7 @@ Amen.
     </p>
 
 
-
-<div id="dz_gloria">
-    <a href="#dz_gloria">
-    
-    ***
-    
-    </a>
-</div>
-
+<hr />
 
 <p class="fr">
 Gloire au Père, et au Fils, et au Saint-Esprit,<br>
@@ -581,7 +490,7 @@ Amen.
 </p>
 
 
-<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
+<p><a href="#rondes" class="bleu" >Retour en haut</a></p>
 
 
 <!-- Fin -->
@@ -612,6 +521,9 @@ Amen.
 
 <script src="/public/js/latin.js"></script>
 
+
+
+<script src="/public/js/chapelets/ch-mysteres.js"></script>
 
 
 <script src="/public/js/chapelets/ch-rosaire.js"></script>

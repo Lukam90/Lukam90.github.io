@@ -31,15 +31,17 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 
 {% include rpath + "rs-base.jinja" %}
 
-<!-- Mystères -->
+<!-- Rondes -->
 
-{{ mc.anchor("mysteres", "=") }}
+{{ mc.anchor("rondes", "=") }}
 
 {% include rpath + "rs-mysteres.jinja" %}
 
+{{ mc.anchor("dizaines") }}
+
 {% include rpath + "rs-dizaine.jinja" %}
 
-{{ mc.return_link("mysteres") }}
+{{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
@@ -54,6 +56,7 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
+{{ mc.script("chapelets/ch-mysteres.js") }}
 {{ mc.script("chapelets/ch-rosaire.js") }}
 
 {% endblock %}

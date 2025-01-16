@@ -41,5 +41,5 @@ exercices = ["ex-musical", "ex-nombres"]
 
 #convert_jinja_list("exercices", exercices)
 
-convert_jinja_single("exercices/ex-musical")
+#convert_jinja_single("exercices/ex-musical")
 convert_jinja_single("exercices/ex-nombres")
