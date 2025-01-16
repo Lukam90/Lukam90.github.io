@@ -21,8 +21,7 @@ Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'appli
 {{ mc.anchor("base", "=") }}
 
 <p>
-    <input type="checkbox" id="v_latine" onchange="switchLang();" />
-    <label for="v_latine">Version latine</label>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 </p>
 
 {% include bpath + "signe-croix.jinja" %}
