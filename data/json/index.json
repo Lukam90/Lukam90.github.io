@@ -5,8 +5,8 @@
     ],
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "ch-rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "ch-ames", "title" : "Chapelet des âmes" },
+        { "href" : "ancetres", "title" : "Prière de libération des ancêtres" },
+        { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "ch-plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],

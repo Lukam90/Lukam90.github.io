@@ -1,0 +1,19 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Prière de libération des ancêtres" %}
+
+{% block content %}
+<p>Il s'agit de la prière de <b>Jean Pliya</b>.</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include spath + "ex-liberation.jinja" %}
+
+{{ mc.return_link() }}
+
+{% endblock %}
