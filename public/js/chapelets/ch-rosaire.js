@@ -18,8 +18,6 @@ let mysteres = [];
 
 /* Fonctions */
 
-majMysteres();
-
 // MAJ des mystères
 
 function majMysteres()
