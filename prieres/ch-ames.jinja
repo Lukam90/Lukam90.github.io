@@ -29,17 +29,17 @@
 
 {% include bpath + "notre-pere.jinja" %}
 
-<hr />
+<hr id="gloria" />
 
 {% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.grains("base_trio", ["-", "Saints", "St Michel", "Anges gardiens"]) }}
 
-<hr />
+<hr id="ave" />
 
 {% include bpath + "ste-marie.jinja" %}
 
-{{ mc.anchor("ex_medaille") }}
+{{ mc.anchor("medaille") }}
 
 {% include spath + "ex-medaille.jinja" %}
 
@@ -49,8 +49,8 @@
 
 <p>
     {% for nb in range(1, 14) %}
-    <input type="radio" name="niveaux" id="nv{{ id }}" onclick="majNiveau();" />
-    <label for="nv{{ id }}">{{ nb }}</label>
+    <input type="radio" name="rd_niveaux" id="nv{{ nb }}" onclick="majNiveau('{{ nb }}');" />
+    <label for="nv{{ nb }}">{{ nb }}</label>
     {% endfor %}
 </p>
 
