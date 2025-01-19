@@ -19,8 +19,8 @@
 
 <p>
     {% for nb in range(1, 6) %}
-    <input type="radio" name="plaies" id="p{{ id }}" onclick="majPlaie();" />
-    <label for="p{{ id }}">{{ nb }}</label>
+    <input type="radio" name="rd_mysteres" id="p{{ nb }}" onclick="majMystere('{{ nb }}');" />
+    <label for="p{{ nb }}">{{ nb }}</label>
     {% endfor %}
 </p>
 
