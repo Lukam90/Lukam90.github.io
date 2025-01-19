@@ -1,0 +1,40 @@
+<!-- Macro -->
+
+{% macro ex_niveau(nb, value) %}
+<input type="radio" name="rd_niveaux" id="nv{{ nb }}" onclick="resetButtons();" />
+<label for="nv{{ nb }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Tableau -->
+
+<p class="tab-responsive">
+    <table>
+        <tr>
+            <td>{{ ex_niveau(1, "1. Crainte de Dieu") }}</td>
+            <td>{{ ex_niveau(2, "2. Chasteté") }}</td>
+            <td>{{ ex_niveau(3, "3. Foi") }}</td>
+        </tr>
+
+        <tr>
+            <td>{{ ex_niveau(4, "4. Espérance") }}</td>
+            <td>{{ ex_niveau(5, "5. Obéissance") }}</td>
+            <td>{{ ex_niveau(6, "6. Patience") }}</td>
+        </tr>
+
+        <tr>
+            <td>{{ ex_niveau(7, "7. Piété") }}</td>
+            <td>{{ ex_niveau(8, "8. Chasteté") }}</td>
+            <td>{{ ex_niveau(9, "9. Prudence") }}</td>
+        </tr>
+
+        <tr>
+            <td>{{ ex_niveau(10, "10. Force") }}</td>
+            <td>{{ ex_niveau(11, "11. Tempérance") }}</td>
+            <td>{{ ex_niveau(12, "12. Pureté") }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">{{ ex_niveau(13, "13. Justice") }}</td>
+        </tr>
+    </table>
+</p>

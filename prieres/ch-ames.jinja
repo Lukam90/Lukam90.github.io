@@ -47,14 +47,7 @@
 
 {{ mc.anchor("rondes", "=") }}
 
-<p>
-    {% for nb in range(1, 14) %}
-    <input type="radio" name="rd_niveaux" id="nv{{ nb }}" onclick="majNiveau('{{ nb }}');" />
-    <label for="nv{{ nb }}">{{ nb }}</label>
-    {% endfor %}
-</p>
-
-<p id="niveau" class="gras">1. Crainte de Dieu</p>
+{% include spath + "ex-niveaux.jinja" %}
 
 {% include bpath + "ste-marie.jinja" %}
 
