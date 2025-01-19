@@ -17,14 +17,7 @@
 
 {{ mc.anchor("rondes", "=") }}
 
-<p>
-    {% for nb in range(1, 6) %}
-    <input type="radio" name="rd_mysteres" id="p{{ nb }}" onclick="majMystere('{{ nb }}');" />
-    <label for="p{{ nb }}">{{ nb }}</label>
-    {% endfor %}
-</p>
-
-<p id="mystere" class="gras">1. les mains</p>
+{% include spath + "ex-plaies.jinja" %}
 
 <p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes.</p>
 

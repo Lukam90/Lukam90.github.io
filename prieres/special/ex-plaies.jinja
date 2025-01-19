@@ -1,0 +1,16 @@
+<!-- Macro -->
+
+{% macro ex_plaie(nb, value) %}
+<input type="radio" name="rd_plaies" id="p{{ nb }}" />
+<label for="p{{ nb }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Tableau -->
+
+<ul class="priere gauche">
+    <li>{{ ex_plaie(1, "1. les mains") }}</li>
+    <li>{{ ex_plaie(2, "2. les pieds") }}</li>
+    <li>{{ ex_plaie(3, "3. le dos") }}</li>
+    <li>{{ ex_plaie(4, "4. la tête") }}</li>
+    <li>{{ ex_plaie(5, "5. le coeur") }}</li>
+</ul>
